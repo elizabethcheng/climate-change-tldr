@@ -1,22 +1,72 @@
-.body {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 .skylinePicture {
     display: block;
     max-height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
-#contentWrapper {
+.contentWrapper {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-h3, p {
-  text-align: center;
+.sectionHeader {
+    color: white;
+    font-size: 32px;
+}
+
+.sectionHeader-additional {
+    margin: 40px 0;
+}
+
+.paragraphHeader {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    margin-top: 20px;
+}
+
+.paragraphContent {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top:5px;
+}
+
+.paragraphContent.paragraphContent-white {
+    color: white;
+}
+
+.bigSection {
+    min-height: 200px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bigSection-blue {
+    background-color: #1D7BF7;
+}
+
+.bigSection-orange {
+    background-color: #F8961E;
+}
+
+.bigSection-yellow {
+    background-color: #F9C74F;
+}
+
+.bigSection-green {
+    background-color: #90BE6D;
 }
