@@ -1,3 +1,11 @@
-.titleClass {
-    color: red;
+.body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skylinePicture {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
 }
