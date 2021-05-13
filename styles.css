@@ -1,3 +1,14 @@
 .titleClass {
     color: red;
 }
+
+#contentWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3, p {
+  text-align: center;
+}
