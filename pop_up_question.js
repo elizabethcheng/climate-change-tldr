@@ -23,6 +23,7 @@ class PopUpQuestion extends React.Component {
     return e(
       'div',
       { 
+        key: i,
         className: "PopUpQuestion-input",
         onClick: () => this.setState({ selected: i }),
       },
