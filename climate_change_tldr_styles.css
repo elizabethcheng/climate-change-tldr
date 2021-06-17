@@ -86,5 +86,22 @@ body {
 }
 
 .textHighlight-pink {
-    background-color: pink;
+    background-color: #FF9999;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.actionCategory {
+  flex: 1;
+}
+
+.categoryHeader {
+    color: white;
+    font-size: 24px;
 }
