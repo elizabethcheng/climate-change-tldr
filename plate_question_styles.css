@@ -1,0 +1,22 @@
+.PlateQuestion-inputsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PlateQuestion-input {
+    display: flex;
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content:  center;
+}
+
+.PlateQuestion-input--showCorrect {
+    background: green;
+}
+
+.PlateQuestion-input--showIncorrect {
+    background: red;
+}
