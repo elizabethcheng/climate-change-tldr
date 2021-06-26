@@ -45,6 +45,10 @@ body {
     margin: 40px 0;
 }
 
+.sectionHeader-top-margin {
+    margin-top: 40px;
+}
+
 .paragraphHeader {
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -93,7 +97,6 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 960px;
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
