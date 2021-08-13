@@ -1,12 +1,12 @@
 
 
-.PlateQuestion-inputsContainer {
+.FootprintQuestion-inputsContainer {
     padding: 25px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.PlateQuestion-input {
+.FootprintQuestion-input {
     display: flex;
     background: white;
     border-radius: 50%;
@@ -16,10 +16,10 @@
     justify-content:  center;
 }
 
-.PlateQuestion-input--showCorrect {
+.FootprintQuestion-input--showCorrect {
     background: green;
 }
 
-.PlateQuestion-input--showIncorrect {
+.FootprintQuestion-input--showIncorrect {
     background: red;
 }

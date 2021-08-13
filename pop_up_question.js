@@ -2,12 +2,12 @@
 
 const e = React.createElement;
 
-
 /*
 props: {
   className: string,
   inputsContainerClassName: string;
   numInputs: number;
+  questionText: string;
   renderInput: (numInput: number, isSelected: boolean) => ReactElement;
   renderAnswer: (numInput: number) => ReactElement;
 }
@@ -42,6 +42,7 @@ class PopUpQuestion extends React.Component {
     return e(
       'div',
       { className: "PopUpQuestion " + this.props.className },
+      e('div', { className: "PopUpQuestion-question"}, this.props.questionText),
       e(
         'div',
         { className: "PopUpQuestion-inputs " + this.props.inputsContainerClassName },
