@@ -22,12 +22,3 @@ body {
 .pageContents {
     font-family: 'Montserrat', sans-serif;    
 }
-
-.questionSection {
-    margin-top: 30px;
-}
-
-.questionText {
-    color: black;
-    font-size: 36px;    
-}

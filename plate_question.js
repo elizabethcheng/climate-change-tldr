@@ -32,6 +32,7 @@ class PlateQuestion extends React.Component {
       className: "PlateQuestion",
       inputsContainerClassName: "PlateQuestion-inputsContainer",
       numInputs: 4,
+      questionText: "1. What percentage of food ends up going to waste?",
       renderInput: this._renderInput,
       renderAnswer: this._renderAnswer,
     });
