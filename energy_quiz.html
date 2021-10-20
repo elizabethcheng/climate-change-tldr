@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="energy_quiz_styles.css">
+        <link rel="stylesheet" type="text/css" href="plate_question_styles.css">
+        <link rel="stylesheet" type="text/css" href="food_category_question_styles.css">
+        <link rel="stylesheet" type="text/css" href="footprint_question_styles.css">
+        <link rel="stylesheet" type="text/css" href="pop_up_question_styles.css">
+
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react@15.6.0/dist/react.js"></script>
+
+        <!-- react-beautiful-dnd https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/about/installation.md 
+
+            <script src="https://unpkg.com/react@15.6.0/dist/react.js"></script>
+            <script src="https://unpkg.com/react-dom@15.6.0/dist/react-dom.js"></script>  
+            <script src="https://unpkg.com/react-beautiful-dnd@5.0.0/dist/react-beautiful-dnd.js"></script>
+
+        -->
+        <script src="https://unpkg.com/react-beautiful-dnd@5.0.0/dist/react-beautiful-dnd.js"></script>
+    </head>
+
+    <body>
+        <div class="climateTLDR"> ClimateTLDR </div>
+        <div class="pageTitle">Test your knowledge - Energy Quiz</div>
+        <div class="pageContents">
+            <div id="drag_question"></div>
+        </div>
+
+        <!-- Load our React component. -->
+        <script src="drag_question.js"></script>
+    </body>
+</html>
