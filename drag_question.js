@@ -18,11 +18,27 @@ props: {
 */
 
 // fake data generator
-const getItems = count =>
+/*const getItems = count =>
   Array.from({ length: count }, (v, k) => k).map(k => ({
     id: `item-${k}`,
     content: `item ${k}`
   }));
+*/
+
+const getItems = () => {
+  const answerTexts = [
+    "Air dry clothes",
+    "Use LED light bulbs",
+    "Reduce heating and AC use",
+    "Properly dispose of old refrigerators",
+  ];
+
+  return answerTexts.map((text, index) => ({
+    id: `item-${index}`,
+    content: `${text}`
+  }));
+}
+
 
 // a little function to help us with reordering the result
 const reorder = (list, startIndex, endIndex) => {
@@ -55,17 +71,10 @@ const getListStyle = isDraggingOver => ({
 });
 
 class DragQuestion extends React.Component {
-  answerTexts = [
-    "Air dry clothes",
-    "Use LED light bulbs",
-    "Reduce heating and AC use",
-    "Properly dispose of old refrigerators",
-  ];
-
   constructor(props) {
     super(props);
     this.state = {
-      items: getItems(10)
+      items: getItems()
     };
     this.onDragEnd = this.onDragEnd.bind(this);
   }
