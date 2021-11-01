@@ -1,0 +1,23 @@
+.ReduceEmissionsQuestion-inputsContainer {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ReduceEmissionsQuestion-input {
+    display: flex;
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content:  center;
+}
+
+.ReduceEmissionsQuestion-input--showCorrect {
+    background: green;
+}
+
+.ReduceEmissionsQuestion-input--showIncorrect {
+    background: red;
+}

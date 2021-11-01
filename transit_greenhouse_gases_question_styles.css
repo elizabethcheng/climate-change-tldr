@@ -1,0 +1,23 @@
+.GreenhouseGasesQuestion-inputsContainer {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.GreenhouseGasesQuestion-input {
+    display: flex;
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content:  center;
+}
+
+.GreenhouseGasesQuestion-input--showCorrect {
+    background: green;
+}
+
+.GreenhouseGasesQuestion-input--showIncorrect {
+    background: red;
+}

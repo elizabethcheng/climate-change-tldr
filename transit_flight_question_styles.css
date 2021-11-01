@@ -1,0 +1,19 @@
+.FlightQuestion-inputsContainer {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FlightQuestion-input {
+    display: flex;
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content:  center;
+}
+
+.FlightQuestion-input--selected {
+    background: blue;
+}
