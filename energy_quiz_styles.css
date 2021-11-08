@@ -6,9 +6,10 @@ body {
     background-color: #f8961e;
 }
 
-.climateTLDR {
+.climateTLDR > a {
     color: white;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .pageTitle {
