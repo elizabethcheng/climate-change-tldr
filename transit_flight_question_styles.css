@@ -7,13 +7,14 @@
 .FlightQuestion-input {
     display: flex;
     background: white;
-    border-radius: 50%;
     width: 100px;
     height: 100px;
     align-items: center;
     justify-content:  center;
+    font-size: 12px;
+    text-align: center;
 }
 
 .FlightQuestion-input--selected {
-    background: blue;
+    background: grey;
 }
