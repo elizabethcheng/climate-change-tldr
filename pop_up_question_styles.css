@@ -6,3 +6,18 @@
     color: black;
     font-size: 36px;
 }
+
+.PopUpQuestion-input {
+  text-align: center;
+}
+
+.PopUpQuestion-correctness-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.PopUpQuestion-correctness-icon--visible {
+  visibility: visible;
+}
