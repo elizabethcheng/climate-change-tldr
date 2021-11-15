@@ -13,7 +13,7 @@ class PlateQuestion extends React.Component {
     const classNameShowCorrect = (anyAnswerSelected && i === this.correctAnswer) ? "PlateQuestion-input--showCorrect" : "";
     const classNameShowIncorrect = (isSelected && i !== this.correctAnswer) ? "PlateQuestion-input--showIncorrect" : "";
 
-    const correctnessIconVisible = (isSelected || i === this.correctAnswer) ? "PopupQuestion-correctness-icon--visible" : ""
+    const correctnessIconVisible = (isSelected || (anyAnswerSelected && i === this.correctAnswer)) ? "PopUpQuestion-correctness-icon--visible" : ""
     let correctnessIconSrc = "./images/check.png";
     if (isSelected && i !== this.correctAnswer) {
       correctnessIconSrc = "./images/remove.png";
@@ -35,7 +35,7 @@ class PlateQuestion extends React.Component {
         'img',
         {
           key: i,
-          className: "PopupQuestion-correctness-icon " + correctnessIconVisible,
+          className: "PopUpQuestion-correctness-icon " + correctnessIconVisible,
           src: correctnessIconSrc
         }
       )

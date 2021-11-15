@@ -14,13 +14,31 @@ class FoodCategoryQuestion extends React.Component {
     const classNameShowCorrect = (anyAnswerSelected && i === this.correctAnswer) ? "FoodCategoryQuestion-input--showCorrect" : "";
     const classNameShowIncorrect = (isSelected && i !== this.correctAnswer) ? "FoodCategoryQuestion-input--showIncorrect" : "";
 
-    return e('div', {
-      className: "FoodCategoryQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect
-    },
-      e('div', {
-        className: "FoodCategoryQuestion-inputContent"
-      }, `${this.answerTexts[i]}`)
-    );
+    const correctnessIconVisible = (isSelected || (anyAnswerSelected && i === this.correctAnswer)) ? "PopUpQuestion-correctness-icon--visible" : ""
+    let correctnessIconSrc = "./images/check.png";
+    if (isSelected && i !== this.correctAnswer) {
+      correctnessIconSrc = "./images/remove.png";
+    } else if (anyAnswerSelected && i === this.correctAnswer) {
+      correctnessIconSrc = "./images/check.png";
+    }
+
+    return [
+      e(
+        'div',
+        { className: "FoodCategoryQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect },
+        e('div', {
+          className: "FoodCategoryQuestion-inputContent"
+        }, `${this.answerTexts[i]}`)
+      ),
+      e(
+        'img',
+        {
+          key: i,
+          className: "PopUpQuestion-correctness-icon " + correctnessIconVisible,
+          src: correctnessIconSrc
+        }
+      )
+    ];
   }
 
   _renderAnswer = (i) => {
