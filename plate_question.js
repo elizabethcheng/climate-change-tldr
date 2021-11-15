@@ -13,33 +13,13 @@ class PlateQuestion extends React.Component {
     const classNameShowCorrect = (anyAnswerSelected && i === this.correctAnswer) ? "PlateQuestion-input--showCorrect" : "";
     const classNameShowIncorrect = (isSelected && i !== this.correctAnswer) ? "PlateQuestion-input--showIncorrect" : "";
 
-    const correctnessIconVisible = (isSelected || i === this.correctAnswer) ? "PopupQuestion-correctness-icon--visible" : ""
-    let correctnessIconSrc = "./images/check.png";
-    if (isSelected && i !== this.correctAnswer) {
-      correctnessIconSrc = "./images/remove.png";
-    } else if (anyAnswerSelected && i === this.correctAnswer) {
-      correctnessIconSrc = "./images/check.png";
-    }
-
-    return [
-      e(
-        'div',
-        { className: "PlateQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect },
-        e(
-          'div',
-          { className: "PlateQuestion-inputContent" },
-          `${(i + 1) * 10}%`
-        ),
-      ),
-      e(
-        'img',
-        {
-          key: i,
-          className: "PopupQuestion-correctness-icon " + correctnessIconVisible,
-          src: correctnessIconSrc
-        }
-      )
-    ];
+    return e('div', { 
+      className: "PlateQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect
+    },
+      e('div', { 
+        className: "PlateQuestion-inputContent"
+      }, `${(i + 1) * 10}%`)
+    );
   }
 
   _renderAnswer = (i) => {
