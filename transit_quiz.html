@@ -3,12 +3,13 @@
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="global_styles.css">
         <link rel="stylesheet" type="text/css" href="transit_quiz_styles.css">
         <link rel="stylesheet" type="text/css" href="transit_greenhouse_gases_question_styles.css">
         <link rel="stylesheet" type="text/css" href="transit_flight_question_styles.css">
         <link rel="stylesheet" type="text/css" href="transit_reduce_emissions_question_styles.css">
         <link rel="stylesheet" type="text/css" href="pop_up_question_styles.css">
-
+        <link rel="stylesheet" type="text/css" href="quiz_layout_styles.css">
 
         <!-- Load React. -->
         <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
@@ -17,13 +18,7 @@
     </head>
 
     <body>
-        <div class="climateTLDR"><a href="climate_change_tldr.html">ClimateTLDR</a></div>
-        <div class="pageTitle">Test your knowledge - Transportation Quiz</div>
-        <div class="pageContents">
-            <div id="greenhouse_gases_question"></div>
-            <div id="flight_question"></div>
-            <div id="reduce_emissions_question"></div>
-        </div>
+        <div id="transit_quiz"> </div>
 
         <!-- Load our React component. -->
         <script src="react_helpers.js"></script>
@@ -31,5 +26,7 @@
         <script src="transit_greenhouse_gases_question.js"></script>
         <script src="transit_flight_question.js"></script>
         <script src="transit_reduce_emissions_question.js"></script>
+        <script src="quiz_layout.js"></script>
+        <script src="transit_quiz.js"></script>
     </body>
 </html>

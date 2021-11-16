@@ -48,7 +48,7 @@ class GreenhouseGasesQuestion extends React.Component {
 
   render() {
     return e(PopUpQuestion, {
-      className: "GreenhouseGasesQuestion",
+      className: cx("GreenhouseGasesQuestion", this.props.className),
       inputsContainerClassName: "GreenhouseGasesQuestion-inputsContainer",
       numInputs: 4,
       questionText: "1. What percentage of greenhouse gases is the transportation sector responsible for?",
@@ -57,6 +57,4 @@ class GreenhouseGasesQuestion extends React.Component {
     });
   }
 }
-
-renderIntoContainer('#greenhouse_gases_question', GreenhouseGasesQuestion);
 

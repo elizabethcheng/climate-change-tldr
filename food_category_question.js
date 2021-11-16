@@ -48,7 +48,7 @@ class FoodCategoryQuestion extends React.Component {
 
   render() {
     return e(PopUpQuestion, {
-      className: "FoodCategoryQuestion",
+      className: cx("FoodCategoryQuestion", this.props.className),
       inputsContainerClassName: "FoodCategoryQuestion-inputsContainer",
       numInputs: 4,
       questionText: "2. Which of the following foods contributes most to carbon emissions?",
@@ -57,5 +57,3 @@ class FoodCategoryQuestion extends React.Component {
     });
   }
 }
-
-renderIntoContainer('#food_category_question', FoodCategoryQuestion);

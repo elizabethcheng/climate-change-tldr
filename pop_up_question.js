@@ -39,7 +39,7 @@ class PopUpQuestion extends React.Component {
   render() {
     return e(
       'div',
-      { className: "PopUpQuestion " + this.props.className },
+      { className: cx("PopUpQuestion", this.props.className) },
       e('div', { className: "PopUpQuestion-question"}, this.props.questionText),
       e(
         'div',
@@ -51,5 +51,3 @@ class PopUpQuestion extends React.Component {
   }
 }
 
-//const domContainer = document.querySelector('#pop_up_question');
-//ReactDOM.render(e(PopUpQuestion), domContainer);

@@ -48,7 +48,7 @@ class ReduceEmissionsQuestion extends React.Component {
 
   render() {
     return e(PopUpQuestion, {
-      className: "ReduceEmissionsQuestion",
+      className: cx("ReduceEmissionsQuestion", this.props.className),
       inputsContainerClassName: "ReduceEmissionsQuestion-inputsContainer",
       numInputs: 4,
       questionText: "3. What can you do to reduce carbon emissions caused by driving your car?",
@@ -57,6 +57,4 @@ class ReduceEmissionsQuestion extends React.Component {
     });
   }
 }
-
-renderIntoContainer('#reduce_emissions_question', ReduceEmissionsQuestion);
 

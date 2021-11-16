@@ -135,5 +135,3 @@ class DragQuestion extends React.Component {
     );
   }
 }
-
-renderIntoContainer('#drag_question', DragQuestion);

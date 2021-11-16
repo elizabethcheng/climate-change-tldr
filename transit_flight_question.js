@@ -34,7 +34,7 @@ class FlightQuestion extends React.Component {
 
   render() {
     return e(PopUpQuestion, {
-      className: "FlightQuestion",
+      className: cx("FlightQuestion", this.props.className),
       inputsContainerClassName: "FlightQuestion-inputsContainer",
       numInputs: 5,
       questionText: "2. On average, how many miles do you fly each year?",
@@ -43,5 +43,3 @@ class FlightQuestion extends React.Component {
     });
   }
 }
-
-renderIntoContainer('#flight_question', FlightQuestion);

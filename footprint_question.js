@@ -48,7 +48,7 @@ class FootprintQuestion extends React.Component {
     const questionText = "3. More and more people are turning to plant-based substitutes for meat such as the Beyond Burger and the Impossible burger. How much smaller is the carbon footprint of the Impossible Burger than that of a burger made from beef?";
 
     return e(PopUpQuestion, {
-      className: "FootprintQuestion",
+      className: cx("FootprintQuestion", this.props.className),
       inputsContainerClassName: "FootprintQuestion-inputsContainer",
       numInputs: 4,
       questionText,
@@ -57,8 +57,3 @@ class FootprintQuestion extends React.Component {
     });
   }
 }
-
-(() => {
-  const domContainer = document.querySelector('#footprint_question');
-  ReactDOM.render(e(FootprintQuestion), domContainer);
-})()

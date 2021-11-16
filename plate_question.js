@@ -49,7 +49,7 @@ class PlateQuestion extends React.Component {
 
   render() {
     return e(PopUpQuestion, {
-      className: "PlateQuestion",
+      className: cx("PlateQuestion", this.props.className),
       inputsContainerClassName: "PlateQuestion-inputsContainer",
       numInputs: 4,
       questionText: "1. What percentage of food ends up going to waste?",
@@ -58,6 +58,4 @@ class PlateQuestion extends React.Component {
     });
   }
 }
-
-renderIntoContainer('#plate_question', PlateQuestion);
 
