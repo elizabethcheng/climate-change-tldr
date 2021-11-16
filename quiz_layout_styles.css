@@ -43,3 +43,7 @@
 .QuizLayout-questions {
     font-family: 'Montserrat', sans-serif;
 }
+
+.QuizLayout-question {
+    margin-top: 30px;
+}
