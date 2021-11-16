@@ -44,7 +44,4 @@ class FlightQuestion extends React.Component {
   }
 }
 
-(() => {
-  const domContainer = document.querySelector('#flight_question');
-  ReactDOM.render(e(FlightQuestion), domContainer);
-})()
+renderIntoContainer('#flight_question', FlightQuestion);

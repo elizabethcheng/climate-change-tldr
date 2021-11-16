@@ -58,7 +58,4 @@ class FoodCategoryQuestion extends React.Component {
   }
 }
 
-(() => {
-  const domContainer = document.querySelector('#food_category_question');
-  ReactDOM.render(e(FoodCategoryQuestion), domContainer);
-})()
+renderIntoContainer('#food_category_question', FoodCategoryQuestion);

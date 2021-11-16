@@ -59,7 +59,5 @@ class PlateQuestion extends React.Component {
   }
 }
 
-(() => {
-  const domContainer = document.querySelector('#plate_question');
-  ReactDOM.render(e(PlateQuestion), domContainer);
-})()
+renderIntoContainer('#plate_question', PlateQuestion);
+

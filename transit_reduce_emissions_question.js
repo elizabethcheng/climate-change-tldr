@@ -58,7 +58,5 @@ class ReduceEmissionsQuestion extends React.Component {
   }
 }
 
-(() => {
-  const domContainer = document.querySelector('#reduce_emissions_question');
-  ReactDOM.render(e(ReduceEmissionsQuestion), domContainer);
-})()
+renderIntoContainer('#reduce_emissions_question', ReduceEmissionsQuestion);
+

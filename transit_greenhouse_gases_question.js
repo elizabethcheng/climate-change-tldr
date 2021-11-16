@@ -58,7 +58,5 @@ class GreenhouseGasesQuestion extends React.Component {
   }
 }
 
-(() => {
-  const domContainer = document.querySelector('#greenhouse_gases_question');
-  ReactDOM.render(e(GreenhouseGasesQuestion), domContainer);
-})()
+renderIntoContainer('#greenhouse_gases_question', GreenhouseGasesQuestion);
+
