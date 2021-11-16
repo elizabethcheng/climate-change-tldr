@@ -22,19 +22,21 @@ class QuizLayout extends React.Component {
           "QuizLayout--yellow": this.props.backgroundColor === "yellow",
         }, "QuizLayout")
       }, 
-      e('div', { className: "QuizLayout-header"}, 
-        e('a', {
-            className: "QuizLayout-headerLink",
-            href: "climate_change_tldr.html"
-          }, 
-          "ClimateTLDR"
-        ),
-      ),
-      e('div', { className: "QuizLayout-title"}, this.props.quizTitle), 
       e('div', { className: "QuizLayout-contents"},
-        this.props.children.map((question) => React.cloneElement(question, {
-            className: cx(question.props.className, "QuizLayout-question"),
-          })
+        e('div', { className: "QuizLayout-header"}, 
+          e('a', {
+              className: "QuizLayout-headerLink",
+              href: "climate_change_tldr.html"
+            }, 
+            "<- Back to ClimateTLDR"
+          ),
+        ),
+        e('div', { className: "QuizLayout-title"}, this.props.quizTitle), 
+        e('div', { className: "QuizLayout-questions"},
+          this.props.children.map((question) => React.cloneElement(question, {
+              className: cx(question.props.className, "QuizLayout-question"),
+            })
+          ),
         ),
       ),
     );

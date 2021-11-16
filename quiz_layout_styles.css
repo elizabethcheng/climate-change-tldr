@@ -1,8 +1,8 @@
 .QuizLayout {
-    height: 100%;
     margin: 0;
     padding: 50px 100px;
     font-family: 'Nunito', sans-serif;
+    height: 100%;
 }
 
 .QuizLayout--yellow {
@@ -17,20 +17,29 @@
     background-color: #f8961e;
 }
 
+.QuizLayout-contents {
+    min-width: 740px;
+    max-width:  1092px;
+}
+
 .QuizLayout-headerLink {
     color: white;
     font-size: 24px;
     text-decoration: none;
 }
 
+.QuizLayout-headerLink:hover {
+    color: blue;
+}
+
 .QuizLayout-title {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 64px;
+    font-size: 32px;
     margin-top: 30px;
 }
 
-.QuizLayout-contents {
+.QuizLayout-questions {
     font-family: 'Montserrat', sans-serif;
 }
