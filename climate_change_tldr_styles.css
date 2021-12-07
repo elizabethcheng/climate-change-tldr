@@ -32,6 +32,13 @@ body {
   width: 100%;
 }
 
+/* ##KeepMaxMinWidthInSync - search code for "#KeepMaxMinWidthInSync" */
+.sectionContentContainer {
+  min-width: 740px;
+  max-width: 1092px;
+  margin: auto;
+}
+
 .sectionHeader {
     color: white;
     font-size: 32px;
