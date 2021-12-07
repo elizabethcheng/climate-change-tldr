@@ -1,0 +1,27 @@
+.QuizFooter {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+}
+
+.QuizFooter-home {
+    font-size: 20px;
+    color: white;
+}
+
+.QuizFooter-or {
+    font-size: 20px;
+    color: black;
+}
+
+.QuizFooter-otherQuizzes {
+    font-size: 20px;
+    color: white;
+}
+
+.QuizFooter-copyright {
+    margin-top: 40px;
+    font-size: 16px;
+    color: white;
+}

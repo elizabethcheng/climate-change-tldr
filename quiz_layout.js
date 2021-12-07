@@ -38,6 +38,7 @@ class QuizLayout extends React.Component {
             })
           ),
         ),
+        e(QuizFooter, { className: "QuizLayout-footer" }),
       ),
     );
   }
