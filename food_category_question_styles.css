@@ -14,6 +14,11 @@
     height: 100px;
     align-items: center;
     justify-content:  center;
+    cursor: pointer;
+}
+
+.FoodCategoryQuestion-input:hover {
+    opacity: 0.6;
 }
 
 .FoodCategoryQuestion-input--showCorrect {

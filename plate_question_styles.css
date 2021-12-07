@@ -14,6 +14,11 @@
     height: 100px;
     align-items: center;
     justify-content:  center;
+    cursor: pointer;
+}
+
+.PlateQuestion-input:hover {
+    opacity: 0.6;
 }
 
 .PlateQuestion-input--showCorrect {
