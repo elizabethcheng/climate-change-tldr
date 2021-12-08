@@ -11,6 +11,7 @@ class FoodQuiz extends React.Component {
       className: "FoodQuiz-quizContents",
       quizTitle: "Test your knowledge - Food Quiz",
       backgroundColor: "green",
+      quizToExcludeFromFooter: "food",
     },
       e(PlateQuestion, {
         id: "#plate_question",

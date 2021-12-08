@@ -20,8 +20,22 @@
     color: white;
 }
 
+.QuizFooter-quizLinks {
+    font-size: 20px;
+    color: white;
+}
+
 .QuizFooter-copyright {
     margin-top: 40px;
     font-size: 16px;
     color: white;
+}
+
+.QuizFooter-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.QuizFooter-link:hover {
+    color: blue;
 }

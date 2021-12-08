@@ -11,6 +11,7 @@ class EnergyQuiz extends React.Component {
       className: "EnergyQuiz-quizContents",
       quizTitle: "Test your knowledge - Energy Quiz",
       backgroundColor: "orange",
+      quizToExcludeFromFooter: "energy",
       children: [      
         e(DragQuestion, {
           id: "#drag_question",

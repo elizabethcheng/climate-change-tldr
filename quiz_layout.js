@@ -5,6 +5,7 @@ props: {
   className: string,
   quizTitle: string,
   backgroundColor: "orange" | "green" | "yellow",
+  quizToExcludeFromFooter: "food" | "energy" | "transit"
 }
 */
 
@@ -38,7 +39,8 @@ class QuizLayout extends React.Component {
             })
           ),
         ),
-        e(QuizFooter, { className: "QuizLayout-footer" }),
+        e('hr', { className: "QuizLayout-footerDivider" }),  
+        e(QuizFooter, { className: "QuizLayout-footer", quizToExcludeFromFooter: this.props.quizToExcludeFromFooter }),
       ),
     );
   }

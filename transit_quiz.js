@@ -11,6 +11,7 @@ class TransitQuiz extends React.Component {
       className: "TransitQuiz-quizContents",
       quizTitle: "Test your knowledge - Transportation Quiz",
       backgroundColor: "yellow",
+      quizToExcludeFromFooter: "transit",
     },
       e(GreenhouseGasesQuestion, {
         id: "#greenhouse_gases_question",
