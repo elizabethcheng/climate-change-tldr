@@ -30,10 +30,6 @@
     text-decoration: none;
 }
 
-.QuizLayout-headerLink:hover {
-    color: blue;
-}
-
 .QuizLayout-title {
     display: flex;
     justify-content: center;

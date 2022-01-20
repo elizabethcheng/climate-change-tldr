@@ -29,7 +29,7 @@ class QuizLayout extends React.Component {
               className: "QuizLayout-headerLink",
               href: "climate_change_tldr.html"
             }, 
-            "<- Back to TLDR: Climate Change"
+            "TLDR: Climate Change"
           ),
         ),
         e('div', { className: "QuizLayout-title"}, this.props.quizTitle), 
