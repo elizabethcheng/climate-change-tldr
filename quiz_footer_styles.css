@@ -6,28 +6,28 @@
 }
 
 .QuizFooter-home {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 .QuizFooter-or {
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 }
 
 .QuizFooter-otherQuizzes {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 .QuizFooter-quizLinks {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 .QuizFooter-copyright {
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
