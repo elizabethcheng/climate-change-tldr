@@ -6,12 +6,43 @@
 
 .GreenhouseGasesQuestion-input {
     display: flex;
-    background: white;
-    width: 100px;
-    height: 100px;
     align-items: center;
     justify-content:  center;
     cursor: pointer;
+
+    background: white;
+    width: 150px;
+    height: 100px;
+
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    
+    margin-top: 40px;
+}
+
+.GreenhouseGasesQuestion-inputContent {
+    z-index: 2;
+}
+
+.GreenhouseGasesQuestion-input::after, .GreenhouseGasesQuestion-input::before{
+    content:"";
+    position:relative;
+    display:inline-block;
+    background:inherit;
+    border-radius:inherit;
+}
+.GreenhouseGasesQuestion-input::after{
+    width:70px;
+    height:60px;
+    top: -35px;
+    left: -17px;
+}
+.GreenhouseGasesQuestion-input::before{
+    width:68px;
+    height:68px;
+    top: -25px;
+    left: 20px;
 }
 
 .GreenhouseGasesQuestion-input:hover {
