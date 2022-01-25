@@ -23,13 +23,11 @@ class PlateQuestion extends React.Component {
 
     return [
       e(
-        'div',
-        { className: "PlateQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect },
-        e(
-          'div',
-          { className: "PlateQuestion-inputContent" },
-          `${(i + 1) * 10}%`
-        ),
+        'img',
+        {
+          className: "PlateQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect,
+          src: "./images/plate.png"
+        }
       ),
       e(
         'img',
@@ -38,7 +36,12 @@ class PlateQuestion extends React.Component {
           className: "PopUpQuestion-correctness-icon " + correctnessIconVisible,
           src: correctnessIconSrc
         }
-      )
+      ),
+      e(
+        'div',
+        { className: "PlateQuestion-inputContent" },
+        `${(i + 1) * 10}%`
+      ),
     ];
   }
 
