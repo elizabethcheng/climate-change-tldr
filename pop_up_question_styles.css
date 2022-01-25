@@ -1,17 +1,19 @@
 .PopUpQuestion-question {
     color: black;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .PopUpQuestion-input {
   text-align: center;
+  position: relative;
 }
 
 .PopUpQuestion-correctness-icon {
   width: 30px;
   height: 30px;
   margin-top: 10px;
-  visibility: hidden;
+  display: none;
 }
 
 .PopUpQuestion-correctness-icon--visible {
