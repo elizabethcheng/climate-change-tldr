@@ -1,6 +1,7 @@
 .PopUpQuestion-question {
     color: black;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .PopUpQuestion-input {
