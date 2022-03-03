@@ -27,7 +27,7 @@ class QuizLayout extends React.Component {
         e('div', { className: "QuizLayout-header"}, 
           e('a', {
               className: "QuizLayout-headerLink",
-              href: "climate_change_tldr.html"
+              href: "index.html"
             }, 
             "TLDR: Climate Change"
           ),

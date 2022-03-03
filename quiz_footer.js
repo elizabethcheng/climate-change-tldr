@@ -23,7 +23,7 @@ class QuizFooter extends React.Component {
         className: cx("QuizFooter", this.props.className)
       }, 
       e('div', { className: "QuizFooter-home"},
-        e('a', { className: cx("QuizFooter-homeLink", "QuizFooter-link"), href: "./climate_change_tldr.html" }, "Head home"), " 🏠"
+        e('a', { className: cx("QuizFooter-homeLink", "QuizFooter-link"), href: "./index.html" }, "Head home"), " 🏠"
       ),
       e('div', { className: "QuizFooter-or"},
         "or"
