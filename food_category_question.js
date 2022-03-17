@@ -3,6 +3,7 @@
 
 class FoodCategoryQuestion extends React.Component {
   correctAnswer = 0;
+  icons = ["cow.png", "shrimp.png", "hen.png", "tofu.png"];
   answerTexts = ["Beef", "Shrimp", "Chicken", "Tofu"];
 
   constructor(props) {
@@ -25,10 +26,15 @@ class FoodCategoryQuestion extends React.Component {
     return [
       e(
         'div',
-        { className: "FoodCategoryQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect },
-        e('div', {
-          className: "FoodCategoryQuestion-inputContent"
-        }, `${this.answerTexts[i]}`)
+        { className: "FoodCategoryQuestion-inputContent" },
+        `${this.answerTexts[i]}`
+      ),
+      e(
+        'img',
+        {
+          className: "FoodCategoryQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect,
+          src: "./images/" + this.icons[i]
+        }
       ),
       e(
         'img',
@@ -37,7 +43,7 @@ class FoodCategoryQuestion extends React.Component {
           className: "PopUpQuestion-correctness-icon " + correctnessIconVisible,
           src: correctnessIconSrc
         }
-      )
+      ),
     ];
   }
 
