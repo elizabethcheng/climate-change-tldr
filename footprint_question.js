@@ -22,16 +22,16 @@ class FootprintQuestion extends React.Component {
 
     return [
       e(
-        'div',
-        { className: "FootprintQuestion-inputContent" },
-        `${30 + (i) * 20}%`
-      ),
-      e(
         'img',
         {
           className: "FootprintQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect,
           src: "./images/footprint.png"
         }
+      ),
+      e(
+        'div',
+        { className: "FootprintQuestion-inputContent" },
+        `${30 + (i) * 20}%`
       ),
       e(
         'img',
