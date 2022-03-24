@@ -19,13 +19,20 @@ class FlightQuestion extends React.Component {
 
   _renderInput = (i, isSelected, anyAnswerSelected) => {
     const classNameIsSelected = isSelected ? "FlightQuestion-input--selected" : "";
-    return e('div', {
-      className: "FlightQuestion-input " + classNameIsSelected
-    },
-      e('div', {
-        className: "FlightQuestion-inputContent"
-      }, `${this.answerTexts[i]}`)
-    );
+    return [
+      e(
+        'img',
+        {
+          className: "FlightQuestion-input " + classNameIsSelected,
+          src: "./images/airplane.png"
+        }
+      ),
+      e(
+        'div',
+        { className: "FlightQuestion-inputContent" },
+        `${this.answerTexts[i]}`
+      ),
+    ];
   }
 
   _renderAnswer = (i) => {
