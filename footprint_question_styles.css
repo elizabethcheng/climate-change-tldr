@@ -8,13 +8,15 @@
 
 .FootprintQuestion-input {
     display: flex;
-    background: white;
-    border-radius: 50%;
     width: 100px;
     height: 100px;
     align-items: center;
     justify-content:  center;
     cursor: pointer;
+}
+
+.FootprintQuestion-inputContent {
+    margin-bottom: 10px;
 }
 
 .FootprintQuestion-input:hover {
