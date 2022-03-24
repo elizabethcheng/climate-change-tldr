@@ -6,7 +6,7 @@
 
 .ReduceEmissionsQuestion-input {
     display: flex;
-    background: white;
+    background: transparent;
     width: 100px;
     height: 100px;
     align-items: center;
@@ -14,6 +14,12 @@
     font-size: 12px;
     text-align: center;
     cursor: pointer;
+}
+
+.ReduceEmissionsQuestion-inputContent {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .ReduceEmissionsQuestion-input:hover {

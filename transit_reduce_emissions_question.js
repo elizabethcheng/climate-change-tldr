@@ -3,6 +3,7 @@
 
 class ReduceEmissionsQuestion extends React.Component {
   correctAnswer = 3;
+  icons = ["electric_car.png", "public_transportation.png", "carpool.png", "all_of_the_above.png"];
   answerTexts = ["Buy an electric car", "Take public transportation", "Carpool", "All of the above"];
 
   constructor(props) {
@@ -25,10 +26,15 @@ class ReduceEmissionsQuestion extends React.Component {
     return [
       e(
         'div',
-        { className: "ReduceEmissionsQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect },
-        e('div', {
-          className: "ReduceEmissionsQuestion-inputContent"
-        }, `${this.answerTexts[i]}`)
+        { className: "ReduceEmissionsQuestion-inputContent" },
+        `${this.answerTexts[i]}`
+      ),
+      e(
+        'img',
+        {
+          className: "ReduceEmissionsQuestion-input " + classNameIsSelected + " " + classNameShowCorrect + " " + classNameShowIncorrect,
+          src: "./images/" + this.icons[i]
+        }
       ),
       e(
         'img',
@@ -37,7 +43,7 @@ class ReduceEmissionsQuestion extends React.Component {
           className: "PopUpQuestion-correctness-icon " + correctnessIconVisible,
           src: correctnessIconSrc
         }
-      )
+      ),
     ];
   }
 
