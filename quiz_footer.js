@@ -10,7 +10,7 @@ props: {
 class QuizFooter extends React.Component {
   QUIZZES = [
     { quizId: "food", text: "food", emoji: "🥒", link: "./food_quiz.html"},
-    { quizId: "energy", text: "energy", emoji: "⚡", link: "./energy_quiz.html"},
+    //{ quizId: "energy", text: "energy", emoji: "⚡", link: "./energy_quiz.html"},
     { quizId: "transit", text: "transportation", emoji: "✈️", link: "./transit_quiz.html"},
   ];
 
@@ -64,7 +64,8 @@ class QuizFooter extends React.Component {
       }
     }
  
-    withSeparators.push(" quizzes");
+    //withSeparators.push(" quizzes");
+    withSeparators.push(" quiz");
     return withSeparators;
   }
 }
